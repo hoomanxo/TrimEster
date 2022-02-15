@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://www.khepria.org/project/progress.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>(TRIM)ESTER: weight goal progress three months at a time!</title>
+        
+        <link rel="stylesheet" type="text/css" href="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/style.css">    <!--Load the AJAX API-->
+    <script type="text/javascript" src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/loader.js.download"></script><style type="text/css"></style>
+    <script type="text/javascript" src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/jquery.min.js.download"></script>
+    <script type="text/javascript">
+    
+    // Load the Visualization API and the piechart package.
+    google.charts.load('current', {'packages':['corechart']});
+      
+    // Set a callback to run when the Google Visualization API is loaded.
+
+    google.charts.setOnLoadCallback(line_chart);
+      
+  function line_chart() 
+  {
+	  	var jsonData = $.ajax({
+			url: 'line.php',
+    		dataType:"json",
+    		async: false,
+			success: function(jsonData)
+				{
+					var options = 
+					{
+                        series: {0:{color:'#006400'}},
+						legend: 'none',
+						hAxis: { minValue: 0, maxValue: 9 },
+						curveType: 'function',
+						pointSize: 7,
+						dataOpacity: 0.3
+					};
+					var data = new google.visualization.arrayToDataTable(jsonData);	
+        			 var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+                     chart.draw(data, options);
+					
+				}	
+			}).responseText;
+	  
+    }
+	
+    </script><script type="text/javascript" charset="UTF-8" src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/loader.js(1).download"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/util.css"><script type="text/javascript" charset="UTF-8" src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/jsapi_compiled_default_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/jsapi_compiled_graphics_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/jsapi_compiled_ui_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/jsapi_compiled_corechart_module.js.download"></script></head>
+    
+    <body style="">
+        
+        <div id="navigation">
+            <h1>(TRIM)<b>ESTER</b></h1>
+
+            <br>
+
+            <ul>
+            <li><a href="http://www.khepria.org/project/home.php">home</a></li>
+            </ul>
+
+
+            <ul>
+                <li class="deactivate">inbox</li>
+                <li><a href="http://www.khepria.org/project/logs.php">logs</a></li>
+                <li><a href="http://www.khepria.org/project/progress.php">progress</a></li>
+                <li class="deactivate">community</li>
+            </ul>
+
+
+            <ul>
+                <li><a href="http://www.khepria.org/project/settings.php">settings</a></li>
+                <li><a href="http://www.khepria.org/project/logout.php">logout</a></li>
+            </ul>
+            </div>        <div class="content">
+            
+            <!-- USER HEADER -->
+            
+            <table>
+                <tbody><tr>
+                    <td class="userpic" rowspan="4"><img src="./(TRIM)ESTER_ weight goal progress three months at a time!4_files/maru.png" style="height:150px; width:150px;"></td>
+                    <td class="username" colspan="3">
+                        pleeteer                        
+                    </td>
+                </tr>
+                <tr>
+                    <td id="sevenday" colspan="3">
+                        0 kg change in the past seven days        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="weightstat">107</td><td class="weightstat">89</td><td class="weightstat">95</td>                    
+                </tr>
+                <tr>
+                    <td class="label">starting</td>
+                    <td class="label">current</td>
+                    <td class="label">goal</td>
+                </tr>
+                <tr>
+                    <td id="lastcheckin" colspan="4"><b style="color:darkgreen;">Most recent weight check-in</b>: September 19, 2018.</td>                    
+                </tr>
+            </tbody></table>
+            
+            <!-- END OF USER HEADER -->
+    <!--Div that will hold the line graph -->
+	<div style="font-size: 22px; font-weight: bold; color: darkgreen; padding: 10px 0 0 10px;">&nbsp;Lifetime Progress towards Your Weight Goal</div>
+	<div id="line_chart" style="width: 900px; height: 300px;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 900px; height: 300px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="900" height="300" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_0"><clippath id="_ABSTRACT_RENDERER_ID_1"><rect x="119" y="58" width="662" height="185"></rect></clippath></defs><rect x="0" y="0" width="900" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="119" y="58" width="662" height="185" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(http://www.khepria.org/project/progress.php#_ABSTRACT_RENDERER_ID_1)"><g><rect x="119" y="242" width="662" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="196" width="662" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="150" width="662" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="104" width="662" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="58" width="662" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="119" y="219" width="662" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="119" y="173" width="662" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="119" y="127" width="662" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="119" y="81" width="662" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="119" y="196" width="662" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g><g><path d="M136.89473684210526,196.5C136.89473684210526,196.5,160.08771929824562,196.5,171.68421052631578,196.5C183.28070175438597,196.5,194.87719298245617,196.5,206.4736842105263,196.5C218.0701754385965,196.5,229.66666666666669,196.5,241.26315789473685,196.5C252.859649122807,196.5,264.45614035087715,196.5,276.0526315789474,196.5C287.64912280701753,196.5,299.2456140350877,212.8453333333364,310.8421052631579,196.5C322.43859649122805,180.1546666666636,334.0350877192983,114.72733333333639,345.63157894736844,98.428C357.2280701754386,82.128666666636,368.8245614035088,98.673333333364,380.42105263157896,98.704C392.0175438596491,98.73466666663599,403.61403508771934,98.581333333364,415.2105263157895,98.612C426.8070175438597,98.642666666636,438.4035087719298,98.811333333364,450,98.888C461.5964912280702,98.96466666663599,473.1929824561403,99.026,484.7894736842105,99.07199999999999C496.3859649122807,99.118,507.98245614035085,99.13333333336399,519.578947368421,99.164C531.1754385964913,99.194666666636,542.7719298245613,99.225333333364,554.3684210526317,99.256C565.9649122807018,99.286666666636,577.561403508772,99.240666666636,589.1578947368421,99.348C600.7543859649123,99.455333333364,612.3508771929825,99.76199999999999,623.9473684210527,99.89999999999999C635.5438596491229,100.038,647.140350877193,99.884666666636,658.7368421052631,100.17599999999999C670.3333333333334,100.467333333364,681.9298245614034,101.694,693.5263157894738,101.648C705.1228070175439,101.60199999999999,716.7192982456141,97.738,728.3157894736843,99.89999999999999C739.9122807017544,102.062,763.1052631578948,114.61999999999999,763.1052631578948,114.61999999999999" stroke="#006400" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g><circle cx="136.89473684210526" cy="196.5" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="171.68421052631578" cy="196.5" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="206.4736842105263" cy="196.5" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="241.26315789473685" cy="196.5" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="276.0526315789474" cy="196.5" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="310.8421052631579" cy="196.5" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="345.63157894736844" cy="98.428" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="380.42105263157896" cy="98.704" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="415.2105263157895" cy="98.612" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="450" cy="98.888" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="484.7894736842105" cy="99.07199999999999" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="519.578947368421" cy="99.164" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="554.3684210526317" cy="99.256" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="589.1578947368421" cy="99.348" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="623.9473684210527" cy="99.89999999999999" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="658.7368421052631" cy="100.17599999999999" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="693.5263157894738" cy="101.648" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="728.3157894736843" cy="99.89999999999999" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle><circle cx="763.1052631578948" cy="114.61999999999999" r="4.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#006400"></circle></g><g><g><text text-anchor="end" x="139.16973684210527" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 139.16973684210527 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">0000-00-00</text></g><g><text text-anchor="end" x="173.9592105263158" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 173.9592105263158 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">0000-00-00</text></g><g><text text-anchor="end" x="208.7486842105263" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 208.7486842105263 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">0000-00-00</text></g><g><text text-anchor="end" x="243.53815789473686" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 243.53815789473686 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">0000-00-00</text></g><g><text text-anchor="end" x="278.3276315789474" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 278.3276315789474 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">0000-00-00</text></g><g><text text-anchor="end" x="313.1171052631579" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 313.1171052631579 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">0000-00-00</text></g><g><text text-anchor="end" x="347.9065789473684" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 347.9065789473684 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-01</text></g><g><text text-anchor="end" x="382.69605263157894" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 382.69605263157894 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-02</text></g><g><text text-anchor="end" x="417.48552631578946" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 417.48552631578946 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-04</text></g><g><text text-anchor="end" x="452.275" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 452.275 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-06</text></g><g><text text-anchor="end" x="487.0644736842105" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 487.0644736842105 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-08</text></g><g><text text-anchor="end" x="521.853947368421" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 521.853947368421 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-09</text></g><g><text text-anchor="end" x="556.6434210526317" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 556.6434210526317 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-10</text></g><g><text text-anchor="end" x="591.4328947368421" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 591.4328947368421 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-11</text></g><g><text text-anchor="end" x="626.2223684210527" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 626.2223684210527 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-12</text></g><g><text text-anchor="end" x="661.0118421052631" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 661.0118421052631 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-13</text></g><g><text text-anchor="end" x="695.8013157894737" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 695.8013157894737 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-14</text></g><g><text text-anchor="end" x="730.5907894736843" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 730.5907894736843 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2016-12-15</text></g><g><text text-anchor="end" x="765.3802631578948" y="259.4404155872192" font-family="Arial" font-size="13" transform="rotate(-30 765.3802631578948 259.4404155872192)" stroke="none" stroke-width="0" fill="#222222">2018-09-19</text></g><g><text text-anchor="end" x="106" y="247.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#444444">-50</text></g><g><text text-anchor="end" x="106" y="201.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="106" y="155.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#444444">50</text></g><g><text text-anchor="end" x="106" y="109.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#444444">100</text></g><g><text text-anchor="end" x="106" y="63.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#444444">150</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>Date</th><th>Weight</th></tr></thead><tbody><tr><td>0000-00-00</td><td>0</td></tr><tr><td>0000-00-00</td><td>0</td></tr><tr><td>0000-00-00</td><td>0</td></tr><tr><td>0000-00-00</td><td>0</td></tr><tr><td>0000-00-00</td><td>0</td></tr><tr><td>0000-00-00</td><td>0</td></tr><tr><td>2016-12-01</td><td>106.6</td></tr><tr><td>2016-12-02</td><td>106.3</td></tr><tr><td>2016-12-04</td><td>106.4</td></tr><tr><td>2016-12-06</td><td>106.1</td></tr><tr><td>2016-12-08</td><td>105.9</td></tr><tr><td>2016-12-09</td><td>105.8</td></tr><tr><td>2016-12-10</td><td>105.7</td></tr><tr><td>2016-12-11</td><td>105.6</td></tr><tr><td>2016-12-12</td><td>105</td></tr><tr><td>2016-12-13</td><td>104.7</td></tr><tr><td>2016-12-14</td><td>103.1</td></tr><tr><td>2016-12-15</td><td>105</td></tr><tr><td>2018-09-19</td><td>89</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 910px; white-space: nowrap; font-family: Arial; font-size: 13px;">150</div><div></div></div></div>
+    
+    <!-- End of the line graph -->
+
+  
+</div></body></html>
